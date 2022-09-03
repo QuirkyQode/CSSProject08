@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  background-color: #000;
+  margin: 0px 170px;
+  height: 100vh;
+}
+body {
+  background-color: #fff;
+  padding-left: 100px;
+  padding-right: 50px;
+  font-family: "roboto";
+  background-image: url(../images/backcover.svg);
+  background-repeat: no-repeat;
+  background-position: top 50% right -70%;
+}
+/* .imgs-div {
+  width: 10px;
+} */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.main-div {
+  /* display: flex; */
+  /* border: 3px solid blue; */
+}
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 0.3;
+  /* border: 3px solid green; */
+  font-size: 13px;
+  color: #3e4794;
+}
+[alt="logo"] {
+  width: 70px;
+}
+.intro-section {
+  display: flex;
+}
+.left-section {
+  align-self: center;
+  padding-bottom: 100px;
+}
+
+.left-section h1 {
+  padding-bottom: 50px;
+  font-size: 45px;
+  flex-wrap: nowrap;
+  color: #3e4794;
+}
+
+.left-section h4 {
+  padding-bottom: 50px;
+  color: rgb(155, 155, 155);
+  font-size: 12px;
+  line-height: 20px;
+}
+.imgs-div {
+  display: flex;
+}
+.vector-img {
+  width: 50px;
+  height: 350px;
+  transform: translateX(100px);
+  align-self: flex-end;
+}
+.vector-dot {
+  width: 12px;
+  height: 400px;
+  align-self: flex-end;
+  transform: translateX(80px);
+}
+[alt="intro-img"] {
+  width: 550px;
+}
+
+button {
+  background: linear-gradient(to right, #965cf2, #ff8adc);
+  border-radius: 15px;
+  border: none;
+  color: #fff;
+}
+
+.signin-btn {
+  font-size: 10px;
+  padding: 5px 15px;
+}
+
+.learn-more-btn {
+  font-weight: 700;
+  font-size: 20px;
+  padding: 10px 20px;
+}
+/* -------------------------------------------------- */
+@media (max-width: 480px) {
+  html {
+    margin: 0;
+  }
+  .intro-section {
+    display: flex;
+    flex-direction: column;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+  }
+  [alt="intro-img"] {
+    width: 300px;
+  }
+  .signin-btn {
+    font-size: 10px;
+    padding: 5px 15px;
+    width: fit-content;
+    justify-self: center;
+    align-self: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    margin: 0;
+  }
+  .intro-section {
+    display: flex;
+    flex-direction: column;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  [alt="intro-img"] {
+    width: 400px;
+  }
+  .signin-btn {
+    font-size: 10px;
+    padding: 5px 15px;
+    width: fit-content;
+    justify-self: center;
+    align-self: center;
+  }
+}
+
+/* 
+@media (max-width: px){
+  
+} */
